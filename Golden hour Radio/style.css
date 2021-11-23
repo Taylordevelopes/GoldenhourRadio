@@ -1,0 +1,141 @@
+@font-face {
+  font-family: Degrassi;
+  src: url(Fonts/degrassi.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: aliceblue;
+  display: small square;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 25%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0px 0px 20px rgb(236, 200, 206);
+  background-color: orange;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.form-group {
+  width: 60%;
+  margin-top: 16px;
+  font-size: 16px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 18px;
+  border: 1px solid rgba(128, 128, 128, 0.199);
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+button {
+  width: 60%;
+  border: none;
+  outline: none;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 4px;
+  font-family: "Montserrat";
+  color: rgb(224, 204, 207);
+  text-align: center;
+  cursor: pointer;
+  margin-top: 5px;
+  transition: 0.3s ease background-color;
+}
+button[type="submit"]:hover {
+  background-color: black;
+}
+#status {
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+#status.success {
+  background-color: rgb(211, 258, 153);
+  animation: status 4s ease forwards;
+}
+#status.error {
+  background-color: rgb(258, 129, 92);
+  color: white;
+  animation: status 4s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: nonr;
+  }
+}
+
+h1 {
+  font-family: "Degrassi";
+  color: white;
+  font-size: 6rem;
+  opacity: 75%;
+}
+
+h4 {
+  font-family: fantasy;
+  color: black;
+  font-size: 1rem;
+}
+p {
+  font-family: fantasy;
+  color: black;
+  font-size: 1rem;
+}
+.player {
+  position: relative;
+  width: 350px;
+  background: white;
+  box-shadow: black;
+}
+.player .imgBx {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+
+.player .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.player audio {
+  width: 100%;
+  outline: none;
+}
